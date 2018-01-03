@@ -38,4 +38,4 @@ You should get the following:
  
 ```
 
-If you get only those dots, and not "F" or "E", we are good to go!
+If you get OK at the end, we are good to go!
