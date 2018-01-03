@@ -6,9 +6,9 @@
  * Time: 1:01 AM
  */
 
-require_once('Board.php');
-require_once('Piece.php');
-require_once('Referee.php');
+require_once('classes/Board.php');
+require_once('classes/Piece.php');
+require_once('classes/Referee.php');
 
 class ChessTest extends PHPUnit_Framework_TestCase
 {

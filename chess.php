@@ -6,9 +6,9 @@
  * Time: 9:57 PM
  */
 
-require_once('Board.php');
-require_once('Piece.php');
-require_once('Referee.php');
+require_once('classes/Board.php');
+require_once('classes/Piece.php');
+require_once('classes/Referee.php');
 
 do{
 

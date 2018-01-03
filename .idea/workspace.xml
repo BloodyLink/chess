@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca9364d5-8954-4be5-9c1a-34aeca1be53b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Board.php" afterPath="$PROJECT_DIR$/Board.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Piece.php" afterPath="$PROJECT_DIR$/Piece.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Referee.php" afterPath="$PROJECT_DIR$/Referee.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Board.php" afterPath="$PROJECT_DIR$/classes/Board.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Piece.php" afterPath="$PROJECT_DIR$/classes/Piece.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Referee.php" afterPath="$PROJECT_DIR$/classes/Referee.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chess.php" afterPath="$PROJECT_DIR$/chess.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/ChessTest.php" afterPath="$PROJECT_DIR$/tests/ChessTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +19,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Piece.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Piece.php">
+        <entry file="file://$PROJECT_DIR$/classes/Piece.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="413">
               <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
@@ -26,30 +28,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chess.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chess.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            <state relative-caret-position="260">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChessTest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChessTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/ChessTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="156" column="33" lean-forward="true" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
-              <folding>
-                <element signature="n#testCheckIfQueenCanAttackSameRowGoodCase#0;n#ChessTest#0;n#!!top" expanded="false" />
-                <element signature="e#522#576#0#PHP" expanded="false" />
-                <element signature="n#testCheckIfQueenCanAttackSameRowBadCase#0;n#ChessTest#0;n#!!top" expanded="false" />
-                <element signature="e#1504#1558#0#PHP" expanded="false" />
-                <element signature="n#testCheckIfQueenCanAttackSameColumnGoodCase#0;n#ChessTest#0;n#!!top" expanded="false" />
-                <element signature="e#2493#2547#0#PHP" expanded="false" />
-                <element signature="n#testCheckIfQueenCanAttackSameColumnBadCase#0;n#ChessTest#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="501">
+              <caret line="177" column="33" lean-forward="true" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,7 +74,7 @@
         </entry>
       </file>
       <file leaf-file-name="Board.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Board.php">
+        <entry file="file://$PROJECT_DIR$/classes/Board.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-687">
               <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
@@ -78,7 +84,7 @@
         </entry>
       </file>
       <file leaf-file-name="Referee.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Referee.php">
+        <entry file="file://$PROJECT_DIR$/classes/Referee.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
               <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -107,12 +113,12 @@
         <option value="$PROJECT_DIR$/unitTests/chessTest.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/chessTest.php" />
-        <option value="$PROJECT_DIR$/tests/ChessTest.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Referee.php" />
         <option value="$PROJECT_DIR$/Piece.php" />
         <option value="$PROJECT_DIR$/Board.php" />
         <option value="$PROJECT_DIR$/chess.php" />
+        <option value="$PROJECT_DIR$/tests/ChessTest.php" />
       </list>
     </option>
   </component>
@@ -154,6 +160,11 @@
             <path>
               <item name="chess" type="b2602c69:ProjectViewProjectNode" />
               <item name="chess" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="chess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chess" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -174,6 +185,7 @@
       <recent name="C:\Users\blood\Desktop\chess\tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\blood\Desktop\chess\classes" />
       <recent name="C:\Users\blood\Desktop\chess\vendor\phpunit\phpunit\tests" />
     </key>
   </component>
@@ -199,12 +211,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514940420482</updated>
-      <workItem from="1514940426631" duration="17576000" />
+      <workItem from="1514940426631" duration="17917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17576000" />
+    <option name="totallyTimeSpent" value="17917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -264,14 +276,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/tests/chessTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -280,39 +284,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Referee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Piece.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ChessTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="156" column="33" lean-forward="true" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
-          <folding>
-            <element signature="n#testCheckIfQueenCanAttackSameRowGoodCase#0;n#ChessTest#0;n#!!top" expanded="false" />
-            <element signature="e#522#576#0#PHP" expanded="false" />
-            <element signature="n#testCheckIfQueenCanAttackSameRowBadCase#0;n#ChessTest#0;n#!!top" expanded="false" />
-            <element signature="e#1504#1558#0#PHP" expanded="false" />
-            <element signature="n#testCheckIfQueenCanAttackSameColumnGoodCase#0;n#ChessTest#0;n#!!top" expanded="false" />
-            <element signature="e#2493#2547#0#PHP" expanded="false" />
-            <element signature="n#testCheckIfQueenCanAttackSameColumnBadCase#0;n#ChessTest#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Board.php">
+    <entry file="file://$PROJECT_DIR$/classes/Board.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-687">
           <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
@@ -331,10 +303,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Piece.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Referee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="260">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ChessTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="177" column="33" lean-forward="true" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
           <folding />
         </state>
       </provider>
