@@ -10,6 +10,10 @@ class Referee
 {
     public function checkIfQueensCanAttackEachOther($board, $whiteQueen, $blackQueen){
 
+
+        //checking all 3 cases
+        //if any of them returns true, the queens can attack each other.
+
         $rowAttack = $board->checkRow($whiteQueen, $blackQueen);
         $columnAttack = $board->checkColumn($whiteQueen, $blackQueen);
         $diagonalAttack = $board->checkDiagonal($whiteQueen, $blackQueen);

@@ -10,7 +10,6 @@ class Piece
 {
     var $positionX;
     var $positionY;
-    var $color;
 
     /**
      * @return mixed
@@ -44,21 +43,6 @@ class Piece
         $this->positionY = $positionY;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getColor()
-    {
-        return $this->color;
-    }
-
-    /**
-     * @param mixed $color
-     */
-    public function setColor($color)
-    {
-        $this->color = $color;
-    }
 
 
 

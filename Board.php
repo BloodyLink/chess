@@ -33,8 +33,9 @@ class Board
         }
     }
 
+    //This one is easy. We check whether or not the other queen is on the same X position.
     public function checkRow($whiteQueen, $blackQueen){
-        //This one is easy. We check whether or not the other queen is on the same X position.
+
         if ($whiteQueen->positionX == $blackQueen->positionX){
             return true;
         }else{
@@ -43,14 +44,17 @@ class Board
 
     }
 
+    //Same as checkRow, but now with the Y position.
     public function checkColumn($whiteQueen, $blackQueen){
-        //Same as checkRow, but now with the Y position.
+
         if ($whiteQueen->positionY == $blackQueen->positionY){
             return true;
         }else{
             return false;
         }
     }
+
+
 
     public function checkDiagonal($whiteQueen, $blackQueen){
 
@@ -61,7 +65,6 @@ class Board
 
         $x = $whiteQueen->positionX;
         $y = $whiteQueen->positionY;
-
 
         while($x >= 1 || $y >= 1){
             $x--;

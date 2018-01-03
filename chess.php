@@ -11,6 +11,10 @@ require_once('Piece.php');
 require_once('Referee.php');
 
 do{
+
+    $valid = true;
+
+    //ASKING POSITIONS:
     $wqp = readLine("Enter White Queen's position (X,Y): ");
     $bqp = readLine("Enter Black Queen's position (X,Y): ");
 
@@ -19,10 +23,22 @@ do{
     $whiteQueenPos = str_replace(' ', '', trim($wqp));
     $blackQueenPos = str_replace(' ', '', trim($bqp));
 
+    //THE INPUT MUST USE A COMMA.
+
+    if (strpos($whiteQueenPos, ',') == false ||
+        strpos($blackQueenPos, ',') == false){
+        $valid = false;
+        echo "Invalid input. Try again.\n";
+        continue;
+    }
+
     $wPosX = explode(',', $whiteQueenPos)[0];
     $wPosY = explode(',', $whiteQueenPos)[1];
     $bPosX = explode(',', $blackQueenPos)[0];
     $bPosY = explode(',', $blackQueenPos)[1];
+
+    //VALIDATING IF THE INPUT IS NUMERIC AND BETWEEN 1 AND 8.
+    //WE DON'T WANT A QUEEN OUT THE BOARD
 
     if( !(is_numeric($wPosX) && $wPosX >= 1 && $wPosX <= 8) ||
         !(is_numeric($wPosY) && $wPosY >= 1 && $wPosY <= 8) ||
@@ -31,8 +47,6 @@ do{
         ($wPosX == $bPosX && $wPosY == $bPosY)){
         echo "Invalid input. Try again.\n";
         $valid = false;
-    }else{
-        $valid = true;
     }
 
 
@@ -52,6 +66,8 @@ $blackQueen->setPositionY($bPosY);
 
 $board = new Board($whiteQueen, $blackQueen);
 
+
+//THIS FOREACH JUST DRAWS THE CHESS BOARD ON SCREEN SO IT IS EASIER TO TEST
 foreach($board->board as $row){
     foreach($row as $data){
         echo $data;
@@ -60,6 +76,8 @@ foreach($board->board as $row){
 }
 
 $referee = new Referee();
+
+//REFEREE WILL TELL US IF THE QUEENS CAN ATTACK EACH OTHER.
 
 if($referee->checkIfQueensCanAttackEachOther($board, $whiteQueen, $blackQueen)){
     echo "Queens can attack each other.";
