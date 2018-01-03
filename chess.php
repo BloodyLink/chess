@@ -19,12 +19,24 @@ do{
     $whiteQueenPos = str_replace(' ', '', trim($wqp));
     $blackQueenPos = str_replace(' ', '', trim($bqp));
 
-    if($wqp == $bqp){
-        echo "There cannot be 2 Queens on the same position. Try again.\n";
+    $wPosX = explode(',', $whiteQueenPos)[0];
+    $wPosY = explode(',', $whiteQueenPos)[1];
+    $bPosX = explode(',', $blackQueenPos)[0];
+    $bPosY = explode(',', $blackQueenPos)[1];
+
+    if( !(is_numeric($wPosX) && $wPosX >= 1 && $wPosX <= 8) ||
+        !(is_numeric($wPosY) && $wPosY >= 1 && $wPosY <= 8) ||
+        !(is_numeric($bPosX) && $bPosX >= 1 && $bPosX <= 8) ||
+        !(is_numeric($bPosY) && $bPosY >= 1 && $bPosY <= 8) ||
+        ($wPosX == $bPosX && $wPosY == $bPosY)){
+        echo "Invalid input. Try again.\n";
+        $valid = false;
+    }else{
+        $valid = true;
     }
 
 
-}while($whiteQueenPos == $blackQueenPos);
+}while(!$valid);
 
 
 
@@ -33,10 +45,10 @@ $blackQueen = new Piece();
 
 //setting positions
 
-$whiteQueen->setPositionX(explode(',', $whiteQueenPos)[0]);
-$whiteQueen->setPositionY(explode(',', $whiteQueenPos)[1]);
-$blackQueen->setPositionX(explode(',', $blackQueenPos)[0]);
-$blackQueen->setPositionY(explode(',', $blackQueenPos)[1]);
+$whiteQueen->setPositionX($wPosX);
+$whiteQueen->setPositionY($wPosY);
+$blackQueen->setPositionX($bPosX);
+$blackQueen->setPositionY($bPosY);
 
 $board = new Board($whiteQueen, $blackQueen);
 
