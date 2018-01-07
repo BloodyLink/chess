@@ -80,9 +80,9 @@ $referee = new Referee();
 //REFEREE WILL TELL US IF THE QUEENS CAN ATTACK EACH OTHER.
 
 if($referee->checkIfQueensCanAttackEachOther($board, $whiteQueen, $blackQueen)){
-    echo "Queens can attack each other.";
+    echo "Queens can attack each other.\n";
 }else{
-    echo "Queens cannot attack each other.";
+    echo "Queens cannot attack each other.\n";
 }
 
 
