@@ -23,10 +23,10 @@ class Board
                 $this->board[$x][$y] = " _ ";
 
                 if ($whiteQueen->positionX == $x && $whiteQueen->positionY == $y) {
-                    $this->board[$x][$y] = "W";
+                    $this->board[$x][$y] = " W ";
                 }
                 if ($blackQueen->positionX == $x && $blackQueen->positionY == $y) {
-                    $this->board[$x][$y] = "B";
+                    $this->board[$x][$y] = " B ";
                 }
 
             }
